@@ -5,7 +5,7 @@ The 'prepdisk' tool installs the provided bootloader onto a pre-partitioned disk
 ## Basic Functionality
 
 ```
-$ prepdisk -dos btldr disk.img 
+$ prepdisk btldr disk.img
 ```
 This will install the executable 'btldr' onto the DOS (MBR) partitioned disk.img. The formatted partition information will be recommitted to the image along with the bootloader to be installed.
 
