@@ -2,6 +2,13 @@
 #include <string>
 
 /**
+ * Get the size of a file
+ * @param file - file to lookup
+ * @return the size, or -1 on error
+ */
+int get_size(const std::string& file);
+
+/**
  * Read the raw binary data from a file
  * @param file - file to read from
  * @param buffer - buffer to read into

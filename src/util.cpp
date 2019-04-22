@@ -4,6 +4,16 @@
 #include <iostream>
 #include <fstream>
 
+int get_size(const std::string& file)
+{
+	struct stat res = {};
+
+	if(stat(file.c_str(), &res) == 0)
+		return res.st_size;
+
+	return -1;
+}
+
 void read_raw(const std::string& file, char* buffer, int size)
 {
 	struct stat res = {};

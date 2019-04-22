@@ -1,5 +1,3 @@
-#include <cstdio>
-#include <cstdlib>
 #include <string>
 #include <iostream>
 
@@ -9,7 +7,7 @@
 void handle_boot(int argc, const char* argv[])
 {
 	if(argc != 2) {
-		fprintf(stderr, "usage: prepdisk --boot ldr disk.img");
+		std::cerr << "usage: prepdisk --boot ldr disk.img\n";
 		exit(-1);
 	}
 
